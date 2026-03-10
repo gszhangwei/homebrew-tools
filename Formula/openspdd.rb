@@ -5,21 +5,21 @@
 class Openspdd < Formula
   desc "AI Coding Assistant Command Template Manager"
   homepage "https://github.com/gszhangwei/open-spdd"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.1.0/openspdd_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d78607ad80e5bb8a23e5e62b24a5969107e3fb7d2e9cd18c959ee0a52259e44b"
+      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.2.0/openspdd_0.2.0_darwin_amd64.tar.gz"
+      sha256 "9ae13aa4c6133e4dc1153e61b9f7a36a1a0ab33d3e0fedda9736f91b593dc083"
 
       define_method(:install) do
         bin.install "openspdd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.1.0/openspdd_0.1.0_darwin_arm64.tar.gz"
-      sha256 "dc0e0b2cb43fadf0e280288dfa51e3d57f868be4d8ddba47aaec0a27d21a425e"
+      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.2.0/openspdd_0.2.0_darwin_arm64.tar.gz"
+      sha256 "8967569c4d043cf52b0410c72636ddbca79563a822f634de0dd449f836bc5fba"
 
       define_method(:install) do
         bin.install "openspdd"
@@ -29,15 +29,15 @@ class Openspdd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.1.0/openspdd_0.1.0_linux_amd64.tar.gz"
-      sha256 "2b7cb50e09b2b861d6917e0ff9994114db58dd5f5762b837a1bb5fb24e601cad"
+      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.2.0/openspdd_0.2.0_linux_amd64.tar.gz"
+      sha256 "aeeac5ed625237012643a325543dd0ee5c56c4fccecd87c08021290e63bfe9a2"
       define_method(:install) do
         bin.install "openspdd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.1.0/openspdd_0.1.0_linux_arm64.tar.gz"
-      sha256 "31a639e513e7bd1d7c2aec7b980dc5cfb11657090b7c7372b573aa8a8bf755ac"
+      url "https://github.com/gszhangwei/open-spdd/releases/download/v0.2.0/openspdd_0.2.0_linux_arm64.tar.gz"
+      sha256 "25f70f838f03dc055cb6844056b83f90d538c280ac8ec885d21e7c8c0744d748"
       define_method(:install) do
         bin.install "openspdd"
       end
